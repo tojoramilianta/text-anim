@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+body {
+    min-height: 100vh;
+    font-family: "Josefin Sans" ,- sans-serif ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 255, 0.493);
+}
+.kely {
+    color: blue;
+    font-size: 4rem;
+}
+#target {
+    display: flex;
+    margin-left: 1rem;
+    position: relative;
+}
+#target::after {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    width: 1px;
+    background: black;
+    top: 0;
+    transform:  translateY(-4px);
+    right: -5px;
+    animation: anim 0.8s linear infinite;
+}
+@keyframes anim {
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100;
+    width: auto;
+    z-index: -100;
+
+}
+
+h1 {
+    text-align: right;
+    position: absolute;
+    top: 15px;
+    font-size: medium;
+}
